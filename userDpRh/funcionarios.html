@@ -33,6 +33,7 @@
     <form action="cadastra.php" method="POST" class="form-grande">
         <fieldset>
             <div class="row">
+                <h1>Registro de Funcionário</h1>
                 <div class="col-4 my-4">
                     <label for="inputNomeUsuario" class="form-label">Nome Completo do Novo
                         Funcionário:</label>
@@ -43,7 +44,7 @@
 
                 <div class="col-3 my-4">
                     <label for="tipo" class="form-label">Tipo de Usuário:</label>
-                    <select type="text" class="form-select"
+                    <select class="form-select"
                             id="tipo" onChange="update()"
                             required>
                         <option disabled selected value="">Selecione</option>
@@ -59,8 +60,7 @@
 
                 <div class="col-3 my-4">
                     <label for="departamento" class="form-label">Departamento:</label>
-                    <select type="form-select form-select-lg mb-3"
-                            class="form-select"
+                    <select class="form-select"
                             name="departamento" id="departamento"
                             required>
                         <option disabled selected value="">Selecione</option>
@@ -87,8 +87,7 @@
 
                 <div class="col-2 my-4">
                     <label for="local" class="form-label">Filial:</label>
-                    <select type="text" class="form-select"
-                            name="local" id="local" required>
+                    <select class="form-select" name="local" id="local" required>
                         <option value="SP" selected>SP</option>
                         <option value="REC">REC</option>
                     </select>

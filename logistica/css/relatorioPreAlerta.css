@@ -1,0 +1,30 @@
+body {
+    background-color: #e7e6e6b7 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    color: #000000 !important;
+}
+
+h1 {
+    text-align: center !important;
+    text-transform: uppercase !important;
+    letter-spacing: -2px !important;
+    font-size: 2em !important;
+    margin: 20px 0 !important;
+}
+
+.form-control:focus {
+    border-color: orange !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 166, 0, 0.486) !important;
+}
+
+.container {
+    background-color: white;
+    margin: 1rem auto 1rem auto;
+    border-radius: 1rem;
+    border-width: 0 10px 16px 0;
+    border-style: solid;
+    border-color: #ff8b06;
+    border-spacing: 8rem;
+    box-shadow: 4px 5px 15px #444343;
+}

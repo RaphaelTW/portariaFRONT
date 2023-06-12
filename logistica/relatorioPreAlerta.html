@@ -31,7 +31,68 @@
 
 <body>
 
+<div class="container">
+    <div class="mb-1 mx-2 my-2">
+        <div class="row justify-content-center ">
+            <div class="col-md-3 col-sm-6 cab">
+                <div class="input-group">
+                    <span class="input-group-text"><label for="data-inicial">Data inicial</label></span>
+                    <input class="form-control text-info" type="date" name="data-inicial" id="data-inicial"
+                           value="<?= date('Y-m-d') ?>"
+                           required>
+                </div>
+            </div>
 
+            <div class="col-md-3 col-sm-6 cab">
+                <div class="input-group">
+                    <span class="input-group-text"><label for="data-final">Data final</label></span>
+                    <input class="form-control text-info" type="date" name="data-final" id="data-final"
+                           value="<?= date('Y-m-d') ?>"
+                           required>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 cab">
+                <button class="btn btn-primary btn-block" id="btn-filtrar">Filtrar</button>
+            </div>
+            <div class="col-md-3 col-sm-6 cab">
+                <button class="btn btn-success btn-block" id="excel">Exportar para o Excel</button>
+            </div>
+        </div>
+
+        <div class="row table-responsive custom-table-responsive">
+            <table class="table custom-table table-hover">
+                <thead>
+                <tr>
+                    <th class="negrito" scope="col">Tipo</th>
+                    <th class="negrito" scope="col">Empresa</th>
+                    <th class="negrito" scope="col">Transportadora</th>
+                    <th class="negrito" scope="col">Motorista</th>
+                    <th class="negrito" scope="col">Veículo</th>
+                    <th class="negrito" scope="col">Data</th>
+                    <th class="negrito" scope="col">Status</th>
+                    <th class="negrito" scope="col">Ação</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="modalRelatorio" class="modal fade" tabindex="-1"></div>
 
 <!-- MDB -->
 <script type="text/javascript"

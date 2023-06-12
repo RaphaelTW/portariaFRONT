@@ -24,72 +24,74 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
           rel="stylesheet"/>
     <!-- [Style da Tela]-->
-    <link rel="stylesheet" href="css/controleRH.css"/>
+    <link rel="stylesheet" href="css/saidasConfirmadas.css"/>
     <!-- [Logo Via na Aba do Navegador]-->
     <link rel="icon" href="img/favicon.png"/>
 </head>
 
 <body>
-<div class="row justify-content-center">
-    <div class="col-md-3 col-sm-6">
-        <div class="input-group">
-            <span class="input-group-text"><label for="data-inicial">Data inicial</label></span>
-            <input class="form-control text-info" type="date" name="data-inicial" id="data-inicial"
-                   value="<?= date('Y-m-d') ?>"
-                   required>
+<div class="cab">
+    <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-6">
+            <div class="input-group">
+                <span class="input-group-text"><label for="data-inicial">Data inicial</label></span>
+                <input class="form-control text-info" type="date" name="data-inicial" id="data-inicial"
+                       value="<?= date('Y-m-d') ?>"
+                       required>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="input-group">
+                <span class="input-group-text"><label for="data-final">Data final</label></span>
+                <input class="form-control text-info" type="date" name="data-final" id="data-final"
+                       value="<?= date('Y-m-d') ?>"
+                       required>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <button class="btn btn-primary btn-block" id="btn-filtrar">Filtrar</button>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <button class="btn btn-success btn-block" id="excel">Exportar para o Excel</button>
         </div>
     </div>
 
-    <div class="col-md-3 col-sm-6">
-        <div class="input-group">
-            <span class="input-group-text"><label for="data-final">Data final</label></span>
-            <input class="form-control text-info" type="date" name="data-final" id="data-final"
-                   value="<?= date('Y-m-d') ?>"
-                   required>
-        </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-        <button class="btn btn-primary btn-block" id="btn-filtrar">Filtrar</button>
-    </div>
-    <div class="col-md-3 col-sm-6">
-        <button class="btn btn-success btn-block" id="excel">Exportar para o Excel</button>
-    </div>
-</div>
+    <div class="row table-responsive custom-table-responsive">
+        <table class="table custom-table table-hover">
+            <thead>
+            <tr>
+                <th class="negrito" scope="col">Nome</th>
+                <th class="negrito" scope="col">Motivo</th>
+                <th class="negrito" scope="col">Data</th>
+                <th class="negrito" scope="col">Horário</th>
+                <th class="negrito" scope="col">Solicitação</th>
+                <th class="negrito" scope="col">Enviado por</th>
+                <th class="negrito" scope="col">Observação Gestor</th>
+                <th class="negrito" scope="col">Situação</th>
+                <th class="negrito" scope="col">Horário da Confirmação</th>
+                <th class="negrito" scope="col">Observação da portaria</th>
+                <th class="negrito" scope="col">Autorizado por</th>
+            </tr>
+            </thead>
 
-<div class="row table-responsive custom-table-responsive">
-    <table class="table custom-table table-hover">
-        <thead>
-        <tr>
-            <th class="negrito" scope="col">Nome</th>
-            <th class="negrito" scope="col">Motivo</th>
-            <th class="negrito" scope="col">Data</th>
-            <th class="negrito" scope="col">Horário</th>
-            <th class="negrito" scope="col">Solicitação</th>
-            <th class="negrito" scope="col">Enviado por</th>
-            <th class="negrito" scope="col">Observação Gestor</th>
-            <th class="negrito" scope="col">Situação</th>
-            <th class="negrito" scope="col">Horário da Confirmação</th>
-            <th class="negrito" scope="col">Observação da portaria</th>
-            <th class="negrito" scope="col">Autorizado por</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <!-- Bootstrap PooperJS -->
